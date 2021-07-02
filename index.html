@@ -5,7 +5,8 @@
 
     <style>
       body {font-family: Arial, Helvetica, sans-serif;}
-      form {border: 3px solid #f1f1f1;}
+      justify-content-center {display: flex; justify-content: center;}
+      form {border: 3px solid #f1f1f1; max-width: 200px;}
       input[type=text], input[type=password] {
         width: 100%;
         padding: 12px 20px;
@@ -31,7 +32,6 @@
 
       .container {
         padding: 16px;
-        max-width: 200px;
       }
 
       span.psw {
@@ -50,7 +50,7 @@
 </head>
 <body>
 <form action="/login.php" method="post">
-  <div class="row justify-content-center">
+  <div class="justify-content-center">
     <div class="container">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
